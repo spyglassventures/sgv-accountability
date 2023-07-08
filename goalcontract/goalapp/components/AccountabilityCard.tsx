@@ -48,7 +48,15 @@ export default function AccountabilityCard() {
             ) : (
                 <Spinner />
             )}
+
+            <Box mt={8}>
+                <Text fontSize={"xl"} fontWeight={"bold"}>Sample Section</Text>
+                <Text mt={2}>This is some sample text below the Card component.</Text>
+            </Box>
+
         </Card>
+
+
     )
 
 }

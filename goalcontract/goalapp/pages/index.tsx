@@ -1,11 +1,8 @@
 import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
-//import styles from "../styles/Home.module.css";
-//import Image from "next/image";
 import { NextPage } from "next";
-//import { Container } from "@chakra-ui/react";
-//import { Container } from "/node_modules/@chakra-ui/react";
 import { Box, Flex, Container } from "@chakra-ui/react";
 import AccountabilityCard from "../components/AccountabilityCard";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
 
@@ -23,9 +20,27 @@ const Home: NextPage = () => {
           <AccountabilityCard />
         )}
 
+        <Box h={"100px"} > </Box>
+
+        <Box h={"100px"} maxW={"1440px"}>
+          {address && (
+            <Footer />
+          )}
+        </Box>
+
 
       </Flex>
     </Container >
+
+
+
+
+
+
+
+
+
+
   );
 };
 
